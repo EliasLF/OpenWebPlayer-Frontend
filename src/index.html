@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add,close,settings" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add,close,closed_caption,more_vert,pause_circle,play_circle,redo,settings,shuffle,skip_next,skip_previous,undo" />
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,6 +55,59 @@
         <button id="settings-btn">
             <span class="icon icon-settings material-symbols-outlined">settings</span>
         </button>
+    </div>
+
+    
+
+    <div id="mediabar">
+        <div id="timebar_wrapper">
+            <p class="media_time">0:00</p>
+            <div id="timebar">
+                <div id="timebar_fg">
+                    <div id="timestamp_dot"></div>
+                </div>
+            </div>
+            <p class="media_time">2:50</p>
+        </div>
+        <div id="actions">
+            <div id="media_cover">
+                <img src="https://imgs.search.brave.com/KRERghoOVtTnN7x0rSpNvNbyRqLtu1VXEUTI0dnpkX0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1wc2Qv/cGxhc3RpYy13cmFw/LW92ZXJsYXktYWxi/dW0tYXJ0LWNvdmVy/LXBzZC10ZW1wbGF0/ZS0wOF85ODQxMDAt/NzQ5LmpwZz9zZW10/PWFpc19oeWJyaWQ" alt="media-cover" id="media_cover_img">
+                <div id="media_title">
+                    <p id="media_txt_title">Media Title</p>
+                    <p id="media_txt_author">Author</p>
+                </div>
+            </div>
+            <div id="media_control">
+                <div id="media_control_base">
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">skip_previous</span>
+                    </button>
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">undo</span>
+                    </button>
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">play_circle</span>
+                    </button>
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">redo</span>
+                    </button>
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">skip_next</span>
+                    </button>
+                </div>
+                <div id="media_control_extra">
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">shuffle</span>
+                    </button>
+                    <button class="media_control_btn">
+                        <span class="icon icon_media material-symbols-outlined">closed_caption</span>
+                    </button>
+                </div>
+                <button class="media_control_btn">
+                    <span class="icon icon_media material-symbols-outlined">more_vert</span>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
